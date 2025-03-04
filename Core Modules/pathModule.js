@@ -13,6 +13,6 @@ const fullPath = path.join(dir, file);
 console.log(fullPath);
 
 const fileName = "example.txt";
-const extension = path.extname(fileName)
+const extension = path.extname(fileName);
 
 console.log("File Extension:", extension);

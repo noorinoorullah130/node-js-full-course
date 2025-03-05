@@ -155,3 +155,13 @@ const message = sayHello("Noorullah");
 console.log(message);
 console.log(math.add(5, 2));
 console.log(math.substruct(5, 2));
+
+// NPM Modules
+// lodash
+
+const lodash = require("lodash");
+
+const number = [1, 2, 3, 4, 5];
+const reversed = lodash.reverse(number);
+
+console.log(reversed);

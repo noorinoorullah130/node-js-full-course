@@ -147,21 +147,62 @@ const url = require("url");
 
 // Custom Module
 
-const sayHello = require("./greetings");
-const math = require("./math");
+// const sayHello = require("./greetings");
+// const math = require("./math");
 
-const message = sayHello("Noorullah");
+// const message = sayHello("Noorullah");
 
-console.log(message);
-console.log(math.add(5, 2));
-console.log(math.substruct(5, 2));
+// console.log(message);
+// console.log(math.add(5, 2));
+// console.log(math.substruct(5, 2));
 
 // NPM Modules
 // lodash
 
-const lodash = require("lodash");
+// const lodash = require("lodash");
 
-const number = [1, 2, 3, 4, 5];
-const reversed = lodash.reverse(number);
+// const number = [1, 2, 3, 4, 5];
+// const reversed = lodash.reverse(number);
 
-console.log(reversed);
+// console.log(reversed);
+
+// File system (streams)
+// readable stream
+
+// const readableStream = fs.createReadStream("example.txt", { encoding: "utf8" });
+
+// readableStream.on("data", (chunk) => {
+//     console.log(chunk);
+// });
+
+// readableStream.on("end", () => {
+//     console.log("Finished reading the file.");
+// });
+
+// readableStream.on("error", (error) => {
+//     console.error("Error", error);
+// });
+
+// writable stream
+// const writableStream = fs.createWriteStream("output2.txt");
+
+// writableStream.write("Hello, ")
+// writableStream.write("World")
+
+// writableStream.end();
+
+// writableStream.on("finish", () => {
+//     console.log("finished writing to the file.");
+// });
+
+// Piping streams
+
+// const readableStream = fs.createReadStream("example.txt");
+
+// const writableStream = fs.createWriteStream("example-output.txt");
+
+// readableStream.pipe(writableStream);
+
+// writableStream.on("finish", () => {
+//     console.log("Copyed successfully!");
+// });
